@@ -1,6 +1,36 @@
 import { RecintosZoo } from "./recintos-zoo.js";
 
 describe('Recintos do Zoologico', () => {
+    let recintosZoo;
+    let animal;
+    let quantidade
+
+    beforeEach(() => {
+        recintosZoo = new recintosZoo();
+        animal = new animal();
+        quantidade=new quantidade();
+
+    });
+
+    function analisaRecintos(animal,quantidade){
+        let savana;
+        let floresta;
+        let savanario;
+        let rio;
+        let savana2;
+        let capacidade;
+        this.animal = animal;
+        this.quantidade = quantidade;
+
+        this.savana=function(){
+            if(this.animal=='MACACO' && this.quantidade==3)
+                return "Esse recinto possui"+ console.log(quantidade)+console.log(animal);
+            }else if(capacidade>10){
+                return "Quantidade inválida";
+            }else if(this.)             
+            }
+        }
+    
 
     test('Deve rejeitar animal inválido', () => {
             const resultado = new RecintosZoo().analisaRecintos('UNICORNIO', 1);
